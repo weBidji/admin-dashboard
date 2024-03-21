@@ -1,2 +1,3 @@
 # admin-dashboard
-Assignment for The Odin Project
+Another assignment for The Odin Project's intermediate HTML and CSS course.
+
