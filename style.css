@@ -29,7 +29,8 @@ html {
     display: grid;
     grid-template-columns: repeat(5, 1fr);
     grid-template-rows: repeat(5, 1fr);
-    height: 100vh
+    height: 100vh;
+
 }
 
 ul {
@@ -265,7 +266,7 @@ h3 {
 
 .project-tile {
 
-    display:flex;
+    display: flex;
     flex-direction: column;
     justify-content: space-between;
     background-color: white;
@@ -274,22 +275,40 @@ h3 {
     /* border-top:10px solid var(--green-600); */
     border-left: 10px solid var(--green-600);
 
-    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.356);
+    box-shadow: 2px 3px 3px rgba(0, 0, 0, 0.356);
+    transition: transform 0.2s ease-in-out;
 
 }
+
+.project-tile:hover {
+    transform: scale(1.05);
+
+}
+
+.project-text {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+}
+
 
 h4 {
     font-size: 1.3rem;
 }
 
-.project-icons{
-    display:flex;
-    justify-content:flex-end;
-    gap:8px;
+.project-desc {
+    font-size: 0.8rem;
+    color: #4A4A4A
 }
 
-.project-icon{
-    height:1.5rem;
+.project-icons {
+    display: flex;
+    justify-content: flex-end;
+    gap: 12px;
+}
+
+.project-icon {
+    height: 1.4rem;
 }
 
 .right-side {
@@ -317,6 +336,26 @@ h4 {
 
     border-radius: 15px;
     padding: 0 0.8rem;
+}
+
+.announcement-box {
+    margin-left: 1.6rem;
+    
+}
+
+.announcement-ttl {
+    font-size: 1.1rem;
+}
+
+.announcement-txt {
+    font-size: 0.8rem;
+    color: #4A4A4A;
+}
+
+hr {
+    color: #4a4a4a44;
+    width: 60%;
+    align-self: center;
 }
 
 .team-chat {
