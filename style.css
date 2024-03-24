@@ -50,9 +50,9 @@ header {
     padding-top: 2rem;
     background-color: white;
 
-   box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.356);
-   z-index:1;
- 
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.356);
+    z-index: 1;
+
 
 
 }
@@ -69,8 +69,8 @@ header {
 
 .search-icon {
     /* background-color: blue; */
-    height:1.4rem;
-    margin-right:0.5rem;
+    height: 1.4rem;
+    margin-right: 0.5rem;
 }
 
 
@@ -80,8 +80,8 @@ header {
     border-radius: 50px;
     text-align: center;
     width: 70%;
-    height:1.5rem;
-    
+    height: 1.5rem;
+
 }
 
 .un-box {
@@ -92,9 +92,10 @@ header {
     align-items: center;
 }
 
-.notif-icon{
-    height:1.4rem;
+.notif-icon {
+    height: 1.4rem;
 }
+
 #user-img-small {
     background-color: var(--green-800);
     border-radius: 50%;
@@ -127,20 +128,20 @@ header {
     display: flex;
     flex-direction: column;
     margin-left: 1.2rem;
-    font-size:0.8rem;
- 
+    font-size: 0.8rem;
+
 }
 
-.un-bold{
-    font-family:'Krub',Arial, Helvetica, sans-serif;
-    font-size:1.6rem;
-    font-weight:600;
-   
+.un-bold {
+    font-family: 'Krub', Arial, Helvetica, sans-serif;
+    font-size: 1.6rem;
+    font-weight: 600;
+
 }
 
-.handle{
-    font-size:1rem;
-    margin-left:4px;
+.handle {
+    font-size: 1rem;
+    margin-left: 4px;
 }
 
 .header-buttons {
@@ -153,15 +154,15 @@ header {
 }
 
 .header-button {
-    
+
     width: 25%;
-    padding:0.3em 0.2em;
+    padding: 0.3em 0.2em;
     border-radius: 60px;
     border: none;
     background-color: var(--green-700);
-    color:white;
-    font-size:1rem;
-    font-weight:500;
+    color: white;
+    font-size: 1rem;
+    font-weight: 500;
 
 }
 
@@ -179,13 +180,13 @@ nav {
     background-color: var(--green-600);
     border-bottom-right-radius: 30px;
 
-    
+
 
 
     color: white;
-    padding:50px 2rem 0 2rem;
+    padding: 50px 2rem 0 2rem;
 
-    z-index:2;
+    z-index: 2;
 
 }
 
@@ -195,35 +196,35 @@ nav {
     flex-direction: row;
     align-items: center;
     font-size: 1.3rem;
-    font-family:'Krub-bold',Arial, Helvetica, sans-serif;
-    font-weight:900;
-    text-shadow:1px 1px 2px rgba(24, 21, 21, 0.295);
+    font-family: 'Krub-bold', Arial, Helvetica, sans-serif;
+    font-weight: 900;
+    text-shadow: 1px 1px 2px rgba(24, 21, 21, 0.295);
 }
 
 #logo {
     height: 3rem;
-    margin-right:1rem;
+    margin-right: 1rem;
 }
 
-li{
-    font-size:1.2rem;
-    margin-top:0.5rem;
-    font-weight:600;
-    display:flex;
-    align-items:flex-end;
-    text-shadow:1px 1px 2px rgba(24, 21, 21, 0.295);
-   
+li {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+    font-weight: 600;
+    display: flex;
+    align-items: flex-end;
+    text-shadow: 1px 1px 2px rgba(24, 21, 21, 0.295);
+
 }
 
-.nav-icon{
-    margin-right:1rem;
-    height:1.85rem;
+.nav-icon {
+    margin-right: 1rem;
+    height: 1.85rem;
 }
 
 
 
-.nav-list-2{
-    margin-top:2rem;
+.nav-list-2 {
+    margin-top: 2rem;
 }
 
 /* *** MAIN *** */
@@ -242,10 +243,6 @@ main {
 
 h3 {
     margin: 0.6rem 0;
-}
-
-.project-tile {
-    background-color: pink;
 }
 
 .projects {
@@ -267,8 +264,32 @@ h3 {
 }
 
 .project-tile {
-    background-color: white;
 
+    display:flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: white;
+    border-radius: 15px;
+    padding: 1rem;
+    /* border-top:10px solid var(--green-600); */
+    border-left: 10px solid var(--green-600);
+
+    box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.356);
+
+}
+
+h4 {
+    font-size: 1.3rem;
+}
+
+.project-icons{
+    display:flex;
+    justify-content:flex-end;
+    gap:8px;
+}
+
+.project-icon{
+    height:1.5rem;
 }
 
 .right-side {
@@ -293,6 +314,9 @@ h3 {
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+
+    border-radius: 15px;
+    padding: 0 0.8rem;
 }
 
 .team-chat {
@@ -310,7 +334,7 @@ h3 {
     src: url(fonts/Krub-Medium.ttf) format('truetype');
 }
 
-@font-face{
-    font-family:'Krub-bold';
-    src:url(fonts/Krub-Bold.ttf) format('truetype');
+@font-face {
+    font-family: 'Krub-bold';
+    src: url(fonts/Krub-Bold.ttf) format('truetype');
 }
