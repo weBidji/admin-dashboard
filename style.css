@@ -179,6 +179,9 @@ nav {
     background-color: var(--green-600);
     border-bottom-right-radius: 30px;
 
+    
+
+
     color: white;
     padding:50px 2rem 0 2rem;
 
@@ -191,7 +194,10 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.4rem;
+    font-size: 1.3rem;
+    font-family:'Krub-bold',Arial, Helvetica, sans-serif;
+    font-weight:900;
+    text-shadow:1px 1px 2px rgba(24, 21, 21, 0.295);
 }
 
 #logo {
@@ -205,6 +211,7 @@ li{
     font-weight:600;
     display:flex;
     align-items:flex-end;
+    text-shadow:1px 1px 2px rgba(24, 21, 21, 0.295);
    
 }
 
