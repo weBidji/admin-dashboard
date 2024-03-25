@@ -382,7 +382,6 @@ h4 {
 
 hr {
     color: #4a4a4a44;
-    /* color:var(--green-100); */
     width: 60%;
     align-self: center;
 }
@@ -391,7 +390,7 @@ hr {
     grid-row: 2/3;
     display: flex;
     flex-direction: column;
-    /* margin-top: 1.2rem; */
+
     flex-grow: 1;
 
 }
