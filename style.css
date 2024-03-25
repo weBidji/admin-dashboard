@@ -22,7 +22,7 @@
 
 html {
     background-color: #E2E8F0;
-    font-family: 'Krub';
+    font-family: 'Krub', Arial, Helvetica, sans-serif;
     max-height: 100vh;
 }
 
@@ -50,8 +50,8 @@ header {
     grid-template-rows: repeat(3, 1fr);
 
     padding-top: 1rem;
-    background-color: white;
 
+    background-color: white;
     box-shadow: 0px 3px 3px rgba(0, 0, 0, 0.356);
     z-index: 1;
 
@@ -62,10 +62,11 @@ header {
 .searchbar-box {
     grid-row: 1/2;
     grid-column: 1/3;
+
     display: flex;
     align-items: center;
     justify-content: center;
-    align-items: center;
+
 
 }
 
@@ -73,22 +74,25 @@ header {
 
     height: 1.4rem;
     margin-right: 0.5rem;
+
 }
 
 
 .searchbar {
 
+    height: 1.5rem;
     background-color: rgba(233, 228, 228, 0.562);
     border-radius: 50px;
     text-align: center;
     width: 70%;
-    height: 1.5rem;
+
 
 }
 
 .un-box {
     grid-row: 1/2;
     grid-column: 3/4;
+
     display: flex;
     justify-content: space-evenly;
     align-items: center;
@@ -99,7 +103,7 @@ header {
 }
 
 #user-img-small {
-    background-color: var(--green-800);
+
     border-radius: 50%;
     height: 60px;
 
@@ -114,6 +118,7 @@ header {
     justify-content: flex-start;
     align-items: center;
     flex-direction: row;
+
     padding-left: 2rem;
 
 
@@ -121,14 +126,15 @@ header {
 
 #user-img-big {
 
-    border-radius: 50%;
     height: 80px;
+    border-radius: 50%;
 
 }
 
 .un2-wrapper {
     display: flex;
     flex-direction: column;
+
     margin-left: 1.2rem;
     font-size: 0.8rem;
 
@@ -154,6 +160,7 @@ header {
 .header-buttons {
     grid-row: 2/4;
     grid-column: 3/4;
+
     display: flex;
     flex-direction: row;
     justify-content: space-evenly;
@@ -188,15 +195,12 @@ nav {
     flex-direction: column;
     justify-content: flex-start;
     gap: 20px;
-    padding-top: 50px;
+
+    padding: 50px 2rem 0 2rem;
+
     background-color: var(--green-600);
     border-bottom-right-radius: 30px;
-
-
-
-
     color: white;
-    padding: 50px 2rem 0 2rem;
 
     z-index: 2;
 
@@ -207,30 +211,35 @@ nav {
     display: flex;
     flex-direction: row;
     align-items: center;
-    font-size: 1.3rem;
+
     font-family: 'Krub-bold', Arial, Helvetica, sans-serif;
+    font-size: 1.3rem;
     font-weight: 900;
     text-shadow: 1px 1px 2px rgba(24, 21, 21, 0.295);
 }
 
 #logo {
+
     height: 3rem;
     margin-right: 1rem;
 }
 
 li {
-    font-size: 1.2rem;
-    margin-top: 0.5rem;
-    font-weight: 600;
     display: flex;
     align-items: flex-end;
+
+    margin-top: 0.5rem;
+
+    font-size: 1.2rem;
+    font-weight: 600;
     text-shadow: 1px 1px 2px rgba(24, 21, 21, 0.295);
 
 }
 
 .nav-icon {
-    margin-right: 1rem;
     height: 1.85rem;
+    margin-right: 1rem;
+
 }
 
 li:hover {
@@ -247,13 +256,16 @@ li:hover {
 /* *** MAIN *** */
 
 main {
-    background-color: #E2E8F0;
+
     grid-column: 2/6;
     grid-row: 2/6;
+
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-template-rows: repeat(2, 1fr);
+
     padding: 1.2rem;
+    background-color: #E2E8F0;
 
 
 }
@@ -334,6 +346,7 @@ h4 {
 .right-side {
     grid-column: 3/4;
     grid-row: 1/3;
+
     display: flex;
     flex-direction: column;
 
@@ -342,25 +355,26 @@ h4 {
 
 .announcements {
     grid-row: 1/2;
+
     display: flex;
     flex-direction: column;
-
     flex-grow: 1;
 }
 
 .announcements-wrapper,
 .chat-wrapper {
-    background-color: white;
+
     flex-grow: 1;
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
     border-radius: 15px;
     padding: 0 0.8rem;
+    background-color: white;
 }
 
 .chat-wrapper {
-    background-color: var(--green-200);
+    background-color: var(--green-300);
     justify-content: flex-end;
     gap: 25px;
     padding-bottom: 1rem;
@@ -408,18 +422,20 @@ hr {
 }
 
 .convo-txt {
-    transform: translateY(-18px);
-    text-align: right;
-    background-color: var(--green-700);
+    align-self: flex-end;
     justify-self: flex-start;
     width: fit-content;
+    transform: translateY(-18px);
+    background-color: var(--green-700);
+    border-radius: 10px;
     padding: 0.5em 0.5em;
     color: var(--green-100);
+    text-align: right;
     line-height: 1rem;
     font-size: 1rem;
     font-weight: 600;
-    align-self: flex-end;
-    border-radius: 10px;
+
+
 
 }
 
@@ -446,12 +462,9 @@ hr {
 
 .chat-input {
     width: 66%;
-    padding: 0 1rem;
     height: 2.2rem;
+    padding: 0 1rem;
     line-height: 2.2rem;
-    /* background-color: rgba(233, 228, 228, 0.671); */
-    /* border:1px solid;
-    border-color:var(--green-600); */
     background-color: var(--green-50);
     border-radius: 50px;
 }
@@ -466,10 +479,10 @@ hr {
     src: url(fonts/Krub-Bold.ttf) format('truetype');
 }
 
-@media screen and (max-width:1200px){
-    
-    .projects-grid{
-        display:flex;
+@media screen and (max-width:1200px) {
+
+    .projects-grid {
+        display: flex;
         flex-direction: column;
     }
 }
